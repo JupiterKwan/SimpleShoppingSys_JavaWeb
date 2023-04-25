@@ -56,7 +56,7 @@
         <input type="reset" value="重置">
     </form>
     <hr />
-    <a href="shopPage2.jsp">其他商品</a>
-    <a href="remove.jsp">其他商品</a>
+    <a href="shopPage2.jsp">下一页</a>
+    <a href="remove.jsp">删除商品</a>
 </body>
 </html>

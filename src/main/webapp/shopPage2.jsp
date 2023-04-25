@@ -25,7 +25,7 @@
                     <option value="noodle">面条</option>
                 </select>
             </td>
-            <td><input type="number" name="mount_clothes" min="0" max="100"></td>
+            <td><input type="number" name="mount_others" min="0" max="100"></td>
         </tr>
     </table>
     <input type="submit" value="添加提交">

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Enumeration" %><%--
   Created by IntelliJ IDEA.
   User: David Kwan
   Date: 2023/4/25
@@ -14,8 +14,22 @@
     <form action="toRemoveGoods" method="post">
         <table>
             <th>选择要删除的商品</th>
+            <%
+                Enumeration<String> e = session.getAttributeNames();
+                while(e.hasMoreElements()) {
+                    String item = (String) e.nextElement();
+                    String info = (String) session.getAttribute(item);
 
+            %>
+            <tr>
+                <td><input type="checkbox" name="item_checked" value=<%= item%>><%= info%>></td>
+            </tr>
+            <%
+                }
+            %>
         </table>
+        <input type="submit" value="提交删除">
+        <input type="reset" value="清楚选择">
     </form>
 </body>
 </html>
